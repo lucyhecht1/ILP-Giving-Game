@@ -46,7 +46,7 @@ export const weeks: WeekData[] = [
   {
     weekNumber: 3,
     perekNumber: 3,
-    perekTitle: 'Perek Gimel',
+    perekTitle: 'Perek Gimmel',
     perekTheme: 'Dignity & Humility',
     keyQuote: 'Beloved is the human being, for they were created in the image of God.',
     keyQuoteAttribution: 'Rabbi Akiva, Avot 3:14',
@@ -62,9 +62,9 @@ export const weeks: WeekData[] = [
   {
     weekNumber: 4,
     perekNumber: 4,
-    perekTitle: 'Perek Dalet',
+    perekTitle: 'Perek Daled',
     perekTheme: 'Who Is Wise?',
-    keyQuote: 'יְהִי כְבוֹד תַּלְמִידְךָ חָבִיב עָלֶיךָ כְּשֶׁלְּךָ, וּכְבוֹד חֲבֵרְךָ כְּמוֹרָא רַבְּךָ, וּמוֹרָא רַבְּךָ כְּמוֹרָא שָׁמָיִם:',
+    keyQuote: 'יְהִי כְבוֹד תַּלְמִידְךָ חָבִיב עָלֶיךָ כְּשֶׁלְּךָ, וּכְבוֹד חֲבֵרְךָ כְּמוֹרָא רַבְּךָ, וּמוֹרָא רַבְּךָ כְּמוֹרָא שָׁמָיִם.',
     keyQuoteAttribution: 'Rabbi Elazar ben Shammua, Avot 4:12',
     spotlightNonprofitId: 'ajws',
     status: 'active',

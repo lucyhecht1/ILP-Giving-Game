@@ -3,14 +3,14 @@ import { Fragment } from 'react';
 import { getCurrentWeek, weeks } from '@/lib/data/weeks';
 import PerekCard from '@/components/PerekCard';
 
-const PEREK_LETTERS = ['Aleph', 'Bet', 'Gimel', 'Dalet', 'Hey', 'Vav'];
+const PEREK_LETTERS = ['א', 'ב', 'ג', 'ד', 'ה', 'ו'];
 const WEEK_COLORS = [
-  'bg-amber-400',
-  'bg-violet-600',
-  'bg-teal-600',
-  'bg-indigo-500',
-  'bg-emerald-600',
-  'bg-rose-500',
+  'bg-green-500',
+  'bg-purple-500',
+  'bg-orange-500',
+  'bg-blue-500',
+  'bg-yellow-500',
+  'bg-red-500',
 ];
 
 export default function Home() {
@@ -72,13 +72,30 @@ export default function Home() {
             Play now
           </h2>
           <p className="text-rose-100 text-lg mb-10">
-            This week&apos;s questions. Score highest to choose next week&apos;s cause.
+            Score highest to choose next week&apos;s cause.
           </p>
+
+          <ul className="text-left max-w-sm mx-auto space-y-3 mb-10">
+            {[
+              'Play the week\'s trivia before Shabbat.',
+              'Highest score becomes that week\'s champion.',
+              'The champion chooses next week\'s spotlight nonprofit.',
+              'Tiebreaker: first to submit wins. So don\'t shmeryl.',
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-white/20 text-white text-[10px] font-bold flex items-center justify-center mt-0.5">
+                  {i + 1}
+                </span>
+                <span className="text-rose-100 text-sm leading-snug">{step}</span>
+              </li>
+            ))}
+          </ul>
+
           <Link
             href="/play"
             className="inline-block bg-white text-rose-700 font-bold text-lg px-10 py-4 rounded-2xl hover:bg-rose-50 transition-colors"
           >
-            Start →
+            Start
           </Link>
         </div>
       </section>

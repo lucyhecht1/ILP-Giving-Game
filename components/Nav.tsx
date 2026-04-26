@@ -8,9 +8,8 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/spotlight', label: 'Spotlight' },
   { href: '/play', label: 'Play' },
-  { href: '/results', label: 'Results' },
+  { href: '/results', label: 'Journey' },
   { href: '/choose', label: 'Choose' },
-  { href: '/past-weeks', label: 'Past Weeks' },
 ];
 
 export default function Nav() {

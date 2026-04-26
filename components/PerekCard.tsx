@@ -55,14 +55,14 @@ export default function PerekCard({ week, variant = 'light' }: Props) {
         </div>
 
         <p className={`font-display text-6xl md:text-7xl text-amber-200 leading-none select-none ${isHebrew(week.keyQuote) ? 'text-right' : ''}`}>
-          &ldquo;
+          {isHebrew(week.keyQuote) ? '"' : '"'}
         </p>
         <p className={`font-display text-xl md:text-2xl text-stone-800 leading-relaxed italic -mt-4 px-4 ${isHebrew(week.keyQuote) ? 'text-right' : ''}`}
           dir={isHebrew(week.keyQuote) ? 'rtl' : undefined}>
           {week.keyQuote}
         </p>
         <p className={`font-display text-6xl md:text-7xl text-amber-200 leading-none select-none ${isHebrew(week.keyQuote) ? '' : 'text-right'}`}>
-          &rdquo;
+          {isHebrew(week.keyQuote) ? '"' : '"'}
         </p>
 
         <div className="border-t border-stone-100 mt-2 pt-4">

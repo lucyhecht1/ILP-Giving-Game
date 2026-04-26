@@ -49,7 +49,7 @@ export default function ChoosePage() {
             className="absolute right-0 bottom-4 font-display font-bold text-violet-900/40 leading-none select-none pointer-events-none whitespace-nowrap uppercase"
             style={{ fontSize: 'clamp(1.5rem, 5vw, 3.5rem)', letterSpacing: '0.3em' }}
           >
-            Omer Day {(week.weekNumber - 1) * 7 + 7}
+            Omer Day 25
           </span>
 
           <p
