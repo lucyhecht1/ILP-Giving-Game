@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 import { getCurrentWeek, weeks } from '@/lib/data/weeks';
 import PerekCard from '@/components/PerekCard';
 
-const PEREK_LETTERS = ['א', 'ב', 'ג', 'ד', 'ה', 'ו'];
+const PEREK_LETTERS = ['Aleph', 'Bet', 'Gimmel', 'Daled', 'Hey', 'Vav'];
 const WEEK_COLORS = [
   'bg-green-500',
   'bg-purple-500',

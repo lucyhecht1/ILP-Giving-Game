@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { getCurrentWeek } from '@/lib/data/weeks';
 import { getNonprofitById } from '@/lib/data/nonprofits';
 import NonprofitCard from '@/components/NonprofitCard';
-import PerekCard from '@/components/PerekCard';
 
 export default function SpotlightPage() {
   const week = getCurrentWeek();
@@ -55,16 +54,6 @@ export default function SpotlightPage() {
         </div>
       </section>
 
-      {/* PEREK — deep emerald */}
-      <section className="bg-emerald-950 py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-4">
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-emerald-600 mb-10">
-            This Week&apos;s Perek
-          </p>
-          <PerekCard week={week} variant="dark" />
-        </div>
-      </section>
-
       {/* CTA — rose */}
       <section className="bg-rose-600 py-16 md:py-24 text-center">
         <div className="max-w-xl mx-auto px-4">
@@ -76,11 +65,11 @@ export default function SpotlightPage() {
             href="/play"
             className="inline-block bg-white text-rose-700 font-bold px-8 py-3.5 rounded-xl hover:bg-rose-50 transition-colors"
           >
-            Play now →
+            Play now
           </Link>
           <div className="mt-8">
             <Link href="/past-weeks" className="text-xs text-rose-300 hover:text-white transition-colors">
-              ← All spotlights
+              All spotlights
             </Link>
           </div>
         </div>

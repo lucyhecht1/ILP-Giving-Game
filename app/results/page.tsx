@@ -32,7 +32,7 @@ export default function ResultsPage() {
           The Journey
         </h1>
         <p className="text-stone-400 text-sm">
-          Six weeks. Six causes. One Torah scroll at a time.
+          Six weeks. Six causes. One perek a week.
         </p>
       </div>
 
@@ -164,7 +164,7 @@ export default function ResultsPage() {
 
       <div className="max-w-3xl mx-auto px-4 pb-16 text-center">
         <p className="text-xs text-stone-400">
-          The 49-day Omer count connects Pesach (freedom) to Shavuot (revelation).
+          What steps are you taking toward Har Sinai?
         </p>
       </div>
 
