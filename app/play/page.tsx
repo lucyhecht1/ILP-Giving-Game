@@ -30,6 +30,7 @@ export default function PlayPage() {
           perekTheme={week.perekTheme}
           nonprofitName={nonprofit.name}
           donateUrl={nonprofit.donateUrl}
+          weekNumber={week.weekNumber}
         />
       </div>
     </div>

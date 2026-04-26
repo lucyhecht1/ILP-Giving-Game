@@ -1,5 +1,9 @@
 import type { WeekData } from '@/lib/types';
 
+function isHebrew(text: string) {
+  return /[֐-׿]/.test(text);
+}
+
 type Props = {
   week: WeekData;
   variant?: 'light' | 'dark';
@@ -18,14 +22,15 @@ export default function PerekCard({ week, variant = 'light' }: Props) {
           </span>
         </div>
 
-        <p className="font-display text-7xl md:text-8xl text-amber-400/25 leading-none select-none">
-          &ldquo;
+        <p className={`font-display text-7xl md:text-8xl text-amber-400/25 leading-none select-none ${isHebrew(week.keyQuote) ? 'text-right' : ''}`}>
+          {isHebrew(week.keyQuote) ? '”' : '“'}
         </p>
-        <p className="font-display text-xl md:text-3xl italic text-white leading-relaxed -mt-6 px-4">
+        <p className={`font-display text-xl md:text-3xl text-white leading-relaxed italic -mt-6 px-4 ${isHebrew(week.keyQuote) ? 'text-right' : ''}`}
+          dir={isHebrew(week.keyQuote) ? 'rtl' : undefined}>
           {week.keyQuote}
         </p>
-        <p className="font-display text-7xl md:text-8xl text-amber-400/25 leading-none text-right select-none -mt-4">
-          &rdquo;
+        <p className={`font-display text-7xl md:text-8xl text-amber-400/25 leading-none select-none -mt-4 ${isHebrew(week.keyQuote) ? '' : 'text-right'}`}>
+          {isHebrew(week.keyQuote) ? '“' : '”'}
         </p>
 
         <div className="border-t border-emerald-800 mt-2 pt-4">
@@ -49,13 +54,14 @@ export default function PerekCard({ week, variant = 'light' }: Props) {
           </span>
         </div>
 
-        <p className="font-display text-6xl md:text-7xl text-amber-200 leading-none select-none">
+        <p className={`font-display text-6xl md:text-7xl text-amber-200 leading-none select-none ${isHebrew(week.keyQuote) ? 'text-right' : ''}`}>
           &ldquo;
         </p>
-        <p className="font-display text-xl md:text-2xl italic text-stone-800 leading-relaxed -mt-4 px-4">
+        <p className={`font-display text-xl md:text-2xl text-stone-800 leading-relaxed italic -mt-4 px-4 ${isHebrew(week.keyQuote) ? 'text-right' : ''}`}
+          dir={isHebrew(week.keyQuote) ? 'rtl' : undefined}>
           {week.keyQuote}
         </p>
-        <p className="font-display text-6xl md:text-7xl text-amber-200 leading-none text-right select-none">
+        <p className={`font-display text-6xl md:text-7xl text-amber-200 leading-none select-none ${isHebrew(week.keyQuote) ? '' : 'text-right'}`}>
           &rdquo;
         </p>
 

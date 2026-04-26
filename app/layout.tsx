@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Gamified Giving',
+  title: 'Giving Game',
   description: 'Six weeks. Six causes. One Torah scroll at a time.',
 };
 

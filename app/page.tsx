@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import { Fragment } from 'react';
 import { getCurrentWeek, weeks } from '@/lib/data/weeks';
-import { getNonprofitById } from '@/lib/data/nonprofits';
-import NonprofitCard from '@/components/NonprofitCard';
 import PerekCard from '@/components/PerekCard';
 
 const PEREK_LETTERS = ['Aleph', 'Bet', 'Gimel', 'Dalet', 'Hey', 'Vav'];
@@ -17,7 +15,6 @@ const WEEK_COLORS = [
 
 export default function Home() {
   const currentWeek = getCurrentWeek();
-  const nonprofit = getNonprofitById(currentWeek.spotlightNonprofitId)!;
   const omerStart = (currentWeek.weekNumber - 1) * 7 + 1;
   const omerEnd = currentWeek.weekNumber * 7;
 
@@ -32,7 +29,7 @@ export default function Home() {
           </p>
           <div className="h-px bg-violet-700 mb-10" />
           <h1 className="font-display text-6xl sm:text-7xl md:text-9xl font-semibold tracking-tight text-white leading-none mb-10">
-            Gamified<br />Giving
+            Giving<br />Game
           </h1>
           <div className="h-px bg-violet-700 mb-10" />
 
@@ -55,24 +52,6 @@ export default function Home() {
               </Fragment>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* SPOTLIGHT — amber */}
-      <section className="bg-amber-400 relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-start pointer-events-none select-none overflow-hidden">
-          <span className="font-display font-bold text-amber-500/30 whitespace-nowrap uppercase leading-none"
-            style={{ fontSize: 'clamp(80px, 20vw, 260px)' }}>
-            {nonprofit.cause}
-          </span>
-        </div>
-        <div className="max-w-4xl mx-auto px-4 py-16 md:py-24 relative z-10">
-          <NonprofitCard nonprofit={nonprofit} variant="featured" />
-          {currentWeek.chosenBy && (
-            <p className="mt-6 text-xs text-amber-800">
-              Chosen by {currentWeek.chosenBy.name}
-            </p>
-          )}
         </div>
       </section>
 
@@ -117,7 +96,6 @@ export default function Home() {
           </div>
           <div className="flex gap-3 overflow-x-auto pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 sm:grid sm:grid-cols-6 sm:overflow-visible sm:pb-0">
             {weeks.map((w) => {
-              const weekNonprofit = getNonprofitById(w.spotlightNonprofitId);
               const isActive = w.status === 'active';
               const isUpcoming = w.status === 'upcoming';
               return (

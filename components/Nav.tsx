@@ -21,7 +21,7 @@ export default function Nav() {
     <header className="bg-violet-950 sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
         <Link href="/" className="font-display text-xl font-semibold text-amber-400 tracking-tight">
-          Gamified Giving
+          Giving Game
         </Link>
 
         <nav className="hidden md:flex gap-1">

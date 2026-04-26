@@ -51,7 +51,7 @@ export const weeks: WeekData[] = [
     keyQuote: 'Beloved is the human being, for they were created in the image of God.',
     keyQuoteAttribution: 'Rabbi Akiva, Avot 3:14',
     spotlightNonprofitId: 'grow-torah',
-    status: 'active',
+    status: 'completed',
     chosenBy: {
       name: 'Jonah Feldman',
       note: "Dignity starts with access — to community, to learning, to a seat at the table. Grow Torah builds that seat.",
@@ -64,10 +64,10 @@ export const weeks: WeekData[] = [
     perekNumber: 4,
     perekTitle: 'Perek Dalet',
     perekTheme: 'Who Is Wise?',
-    keyQuote: 'Who is wise? One who learns from every person.',
-    keyQuoteAttribution: 'Ben Zoma, Avot 4:1',
+    keyQuote: 'יְהִי כְבוֹד תַּלְמִידְךָ חָבִיב עָלֶיךָ כְּשֶׁלְּךָ, וּכְבוֹד חֲבֵרְךָ כְּמוֹרָא רַבְּךָ, וּמוֹרָא רַבְּךָ כְּמוֹרָא שָׁמָיִם:',
+    keyQuoteAttribution: 'Rabbi Elazar ben Shammua, Avot 4:12',
     spotlightNonprofitId: 'ajws',
-    status: 'upcoming',
+    status: 'active',
     connection:
       "Ben Zoma's answer in practice: AJWS arrives with resources, not answers, and lets the people with lived knowledge lead.",
   },

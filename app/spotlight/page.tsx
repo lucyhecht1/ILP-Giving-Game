@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getCurrentWeek } from '@/lib/data/weeks';
 import { getNonprofitById } from '@/lib/data/nonprofits';
+import NonprofitCard from '@/components/NonprofitCard';
 import PerekCard from '@/components/PerekCard';
 
 export default function SpotlightPage() {
@@ -31,24 +32,23 @@ export default function SpotlightPage() {
         </div>
       </section>
 
-      {/* WHY THIS WEEK — amber */}
-      <section className="bg-amber-400 py-14 md:py-20">
-        <div className="max-w-3xl mx-auto px-4">
+      {/* SPOTLIGHT — amber */}
+      <section className="bg-amber-400 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-start pointer-events-none select-none overflow-hidden">
+          <span className="font-display font-bold text-amber-500/30 whitespace-nowrap uppercase leading-none"
+            style={{ fontSize: 'clamp(80px, 20vw, 260px)' }}>
+            {nonprofit.cause}
+          </span>
+        </div>
+        <div className="max-w-4xl mx-auto px-4 py-16 md:py-24 relative z-10">
+          <NonprofitCard nonprofit={nonprofit} variant="featured" />
           {week.connection && (
-            <p className="text-stone-900 text-lg md:text-xl leading-relaxed mb-8 font-medium max-w-2xl">
+            <p className="mt-8 text-stone-800 text-sm md:text-base leading-relaxed max-w-2xl font-medium">
               {week.connection}
             </p>
           )}
-          <a
-            href={nonprofit.donateUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-stone-900 text-amber-400 px-7 py-3 rounded-xl font-semibold text-sm hover:bg-stone-800 transition-colors"
-          >
-            Donate →
-          </a>
           {week.chosenBy && (
-            <p className="mt-6 text-xs text-amber-800">
+            <p className="mt-4 text-xs text-amber-800">
               Chosen by {week.chosenBy.name}
             </p>
           )}
