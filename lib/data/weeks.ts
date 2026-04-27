@@ -8,19 +8,17 @@ export const weeks: WeekData[] = [
     perekTheme: 'Foundations',
     keyQuote: 'The world stands on three things: Torah, Avodah, and Gemilut Chasadim.',
     keyQuoteAttribution: 'Shimon HaTzaddik, Avot 1:2',
-    spotlightNonprofitId: 'mazon',
+    spotlightNonprofitId: 'gem',
     status: 'completed',
     chosenBy: {
       name: 'The Opening Committee',
       note: "Every loop starts somewhere. We chose to begin with hunger — because Gemilut Chasadim means not just loving, but feeding.",
     },
     winner: {
-      name: 'Miriam Cohen',
+      name: 'Mila Gonzalez',
       score: 5,
-      chosenNextId: 'repair-the-world',
+      chosenNextId: 'cpc',
     },
-    connection:
-      "Shimon HaTzaddik's third pillar — Gemilut Chasadim — is what MAZON practices, not just preaches.",
   },
   {
     weekNumber: 2,
@@ -29,19 +27,17 @@ export const weeks: WeekData[] = [
     perekTheme: 'Choosing Your Path',
     keyQuote: 'It is not your duty to finish the work, but neither are you free to desist from it.',
     keyQuoteAttribution: 'Rabbi Tarfon, Avot 2:16',
-    spotlightNonprofitId: 'repair-the-world',
+    spotlightNonprofitId: 'cpc',
     status: 'completed',
     chosenBy: {
       name: 'Miriam Cohen',
       note: "Repair the World puts volunteers where they're needed — that's Rabbi Tarfon made real.",
     },
     winner: {
-      name: 'Jonah Feldman',
+      name: 'Art Weinkofsky',
       score: 5,
-      chosenNextId: 'grow-torah',
+      chosenNextId: 'rainforest',
     },
-    connection:
-      "Rabbi Tarfon's mandate in practice: the work won't finish, and that is not an excuse to stop.",
   },
   {
     weekNumber: 3,
@@ -50,14 +46,17 @@ export const weeks: WeekData[] = [
     perekTheme: 'Dignity & Humility',
     keyQuote: 'Beloved is the human being, for they were created in the image of God.',
     keyQuoteAttribution: 'Rabbi Akiva, Avot 3:14',
-    spotlightNonprofitId: 'grow-torah',
+    spotlightNonprofitId: 'rainforest',
     status: 'completed',
     chosenBy: {
       name: 'Jonah Feldman',
       note: "Dignity starts with access — to community, to learning, to a seat at the table. Grow Torah builds that seat.",
     },
-    connection:
-      "Rabbi Akiva's insistence on human dignity begins with belonging — and Grow Torah exists to make Jewish belonging more possible.",
+    winner: {
+      name: 'Sonya Krasotina',
+      score: 5,
+      chosenNextId: 'afmda',
+    },
   },
   {
     weekNumber: 4,
@@ -66,10 +65,8 @@ export const weeks: WeekData[] = [
     perekTheme: 'Who Is Wise?',
     keyQuote: 'יְהִי כְבוֹד תַּלְמִידְךָ חָבִיב עָלֶיךָ כְּשֶׁלְּךָ, וּכְבוֹד חֲבֵרְךָ כְּמוֹרָא רַבְּךָ, וּמוֹרָא רַבְּךָ כְּמוֹרָא שָׁמָיִם.',
     keyQuoteAttribution: 'Rabbi Elazar ben Shammua, Avot 4:12',
-    spotlightNonprofitId: 'ajws',
+    spotlightNonprofitId: 'afmda',
     status: 'active',
-    connection:
-      "Ben Zoma's answer in practice: AJWS arrives with resources, not answers, and lets the people with lived knowledge lead.",
   },
   {
     weekNumber: 5,

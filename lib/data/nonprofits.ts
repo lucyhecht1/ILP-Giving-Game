@@ -2,6 +2,33 @@ import type { Nonprofit } from '@/lib/types';
 
 export const nonprofits: Nonprofit[] = [
   {
+    id: 'gem',
+    name: 'Global Empowerment Mission',
+    tagline: 'Empowering Communities in Crisis',
+    description:
+      'Global Empowerment Mission (GEM) delivers rapid disaster relief and long-term recovery support to communities around the world, pairing immediate aid with sustainable empowerment programs.',
+    cause: 'Disaster Relief',
+    donateUrl: 'https://globalempowermentmission.org',
+  },
+  {
+    id: 'cpc',
+    name: 'Central Park Conservancy',
+    tagline: 'Keeping Central Park Beautiful for All',
+    description:
+      'The Central Park Conservancy is a private nonprofit that manages and restores Central Park, raising the majority of the park\'s annual budget and ensuring it remains a world-class public space for all New Yorkers and visitors.',
+    cause: 'Parks & Public Spaces',
+    donateUrl: 'https://centralparknyc.org',
+  },
+  {
+    id: 'rainforest',
+    name: 'Rainforest Alliance',
+    tagline: 'Working with Nature, Not Against It',
+    description:
+      'The Rainforest Alliance works to conserve biodiversity and ensure sustainable livelihoods by transforming land-use practices, business practices, and consumer behavior across more than 70 countries.',
+    cause: 'Environmental Conservation',
+    donateUrl: 'https://rainforest-alliance.org',
+  },
+  {
     id: 'mazon',
     name: 'MAZON',
     tagline: 'A Jewish Response to Hunger',
@@ -36,6 +63,15 @@ export const nonprofits: Nonprofit[] = [
       'Grow Torah supports emerging Jewish educators and grassroots communities building meaningful Jewish life outside the mainstream. Small investments, outsized impact.',
     cause: 'Jewish Education',
     donateUrl: 'https://growtorah.org',
+  },
+  {
+    id: 'afmda',
+    name: 'American Friends of Magen David Adom',
+    tagline: 'Saving Lives in Israel and Beyond',
+    description:
+      'AFMDA supports Magen David Adom, Israel\'s national emergency medical organization and the Red Cross of Israel. MDA provides emergency medical care, disaster relief, and blood services — on the front lines, every day.',
+    cause: 'Emergency Medicine & Humanitarian Aid',
+    donateUrl: 'https://afmda.org',
   },
   {
     id: 'ajws',

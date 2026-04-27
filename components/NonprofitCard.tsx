@@ -27,7 +27,7 @@ export default function NonprofitCard({ nonprofit, variant = 'full' }: Props) {
           rel="noopener noreferrer"
           className="inline-block bg-stone-900 text-amber-400 py-3 px-7 rounded-xl font-semibold hover:bg-stone-800 transition-colors text-sm"
         >
-          Donate to {nonprofit.name} →
+          Donate to {nonprofit.name}
         </a>
       </div>
     );
@@ -61,7 +61,7 @@ export default function NonprofitCard({ nonprofit, variant = 'full' }: Props) {
           rel="noopener noreferrer"
           className="mt-5 inline-block w-full text-center bg-emerald-600 text-white py-2.5 px-4 rounded-xl font-medium hover:bg-emerald-700 transition-colors"
         >
-          Donate to {nonprofit.name} →
+          Donate to {nonprofit.name}
         </a>
       </div>
     </div>
