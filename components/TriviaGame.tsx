@@ -199,7 +199,7 @@ export default function TriviaGame({
               Pledge to {nonprofitName}
             </h2>
             <p className="text-amber-900 text-sm leading-relaxed max-w-md">
-              The game is free. The cause is real. Pledge what you&apos;ll give — you&apos;ll donate directly after.
+              Commit to creating a better future.
             </p>
           </div>
 
