@@ -108,7 +108,7 @@ export default function Home() {
               The Six-Week Journey
             </p>
             <Link href="/past-weeks" className="text-xs text-stone-500 hover:text-stone-800 font-medium transition-colors">
-              See all →
+              See all
             </Link>
           </div>
           <div className="flex gap-3 overflow-x-auto pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 sm:grid sm:grid-cols-6 sm:overflow-visible sm:pb-0">

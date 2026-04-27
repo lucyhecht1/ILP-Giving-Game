@@ -63,7 +63,7 @@ export default function ChooseForm({ shortlist }: Props) {
             onClick={() => setConfirmed(true)}
             className="w-full bg-emerald-600 text-white py-3 rounded-xl font-semibold hover:bg-emerald-700 transition-colors"
           >
-            Confirm my choice →
+            Confirm my choice
           </button>
         </div>
       )}

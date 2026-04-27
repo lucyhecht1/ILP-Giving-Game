@@ -166,7 +166,7 @@ export default function TriviaGame({
               }`}
             >
               {canProceed
-                ? `Continue, ${trimmedName.split(' ')[0]} →`
+                ? `Continue, ${trimmedName.split(' ')[0]}`
                 : 'Enter your name to continue'}
             </button>
           </div>
@@ -282,7 +282,7 @@ export default function TriviaGame({
             onClick={() => setState('playing')}
             className="w-full bg-amber-400 text-stone-900 font-bold text-xl py-5 rounded-2xl hover:bg-amber-300 transition-colors tracking-tight"
           >
-            Play now →
+            Play now
           </button>
         </div>
 
@@ -340,7 +340,7 @@ export default function TriviaGame({
             rel="noopener noreferrer"
             className="inline-block bg-white text-stone-900 font-bold px-5 py-2.5 rounded-xl text-sm hover:bg-white/90 transition-colors"
           >
-            Donate to {nonprofitName} →
+            Donate to {nonprofitName}
           </a>
         </div>
 
@@ -356,7 +356,7 @@ export default function TriviaGame({
               href="/choose"
               className="flex-1 text-center bg-white text-stone-900 font-bold py-3.5 rounded-xl hover:bg-white/90 transition-colors"
             >
-              Choose next nonprofit →
+              Choose next nonprofit
             </Link>
           )}
         </div>
@@ -452,7 +452,7 @@ export default function TriviaGame({
               onClick={handleNext}
               className="w-full bg-amber-400 text-stone-900 font-bold text-base py-4 rounded-2xl hover:bg-amber-300 transition-colors"
             >
-              {current + 1 >= questions.length ? 'See results →' : 'Next →'}
+              {current + 1 >= questions.length ? 'See results' : 'Next'}
             </button>
           </div>
         )}

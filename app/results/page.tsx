@@ -124,7 +124,7 @@ export default function ResultsPage() {
                       href="/play"
                       className="inline-block bg-amber-400 text-stone-900 font-bold px-6 py-3 rounded-xl text-sm hover:bg-amber-300 transition-colors"
                     >
-                      Play this week →
+                      Play this week
                     </Link>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export default function ResultsPage() {
                         <>
                           <span className="text-stone-300">·</span>
                           <span className="text-xs text-stone-400">chose</span>
-                          <span className="text-xs font-semibold text-stone-600">→ {chosenOrg.name}</span>
+                          <span className="text-xs font-semibold text-stone-600">{chosenOrg.name}</span>
                         </>
                       )}
                     </div>

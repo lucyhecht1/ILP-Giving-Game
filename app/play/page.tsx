@@ -20,7 +20,7 @@ export default function PlayPage() {
             <h1 className="text-2xl font-bold text-white">Trivia</h1>
           </div>
           <Link href="/spotlight" className="text-xs text-stone-500 hover:text-stone-300 transition-colors">
-            This week&apos;s cause →
+            This week&apos;s cause
           </Link>
         </div>
 
